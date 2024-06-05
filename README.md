@@ -9,3 +9,10 @@ _actually centering_ new windows on the screen.
 
 An options dialog is included to allow the user to exclude applications from 
 being centered.
+
+## Download
+
+<a href="https://store.kde.org/p/2162132"><img alt="Download from the KDE Store" height="50px"
+src="https://img.shields.io/badge/KDE_Store-blue?style=for-the-badge&logo=kde"></a>
+<a href="https://github.com/Merrit/kwin-center-new-windows/releases/latest"><img alt="Download from GitHub" height="50px"
+src="https://img.shields.io/badge/GitHub-blue?style=for-the-badge&logo=github"></a>
