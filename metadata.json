@@ -1,0 +1,21 @@
+{
+    "KPlugin": {
+        "Name": "Center New Windows",
+        "Description": "Position all new windows in the exact center of the screen.",
+        "Icon": "preferences-system-windows",
+        "Authors": [
+            {
+                "Email": "kmcwilliampublic@gmail.com",
+                "Name": "Kristen McWilliam"
+            }
+        ],
+        "Id": "center-new-windows",
+        "Version": "1.0.0",
+        "License": "GPLv3",
+        "Website": "https://github.com/Merrit/kwin-center-new-windows"
+    },
+    "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}
