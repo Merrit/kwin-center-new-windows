@@ -1,8 +1,17 @@
+/// Windows that should never be affected by this script.
+///
+/// Applications are specified by their class name, eg. `org.kde.yakuake`.
+const alwaysExcludedApplications = [
+    "krunner",
+];
+
+/// User specified applications to exclude from being centered.
+///
+/// Applications are specified by their class name, eg. `org.kde.yakuake`.
+const userExcludedApplications = readConfig("applications", "").toLowerCase().split("\n");
+
 const config = {
-    /// User specified applications to exclude from being centered.
-    ///
-    /// Applications are specified by their class name, eg. `org.kde.yakuake`.
-    excludedApplications: readConfig("applications", "").toLowerCase().split("\n"),
+    excludedApplications: alwaysExcludedApplications.concat(userExcludedApplications),
 };
 
 /**
