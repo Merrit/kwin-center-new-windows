@@ -3,6 +3,7 @@
 /// Applications are specified by their class name, eg. `org.kde.yakuake`.
 const alwaysExcludedApplications = [
     "krunner",
+    "org.kde.yakuake",
 ];
 
 /// User specified applications to exclude from being centered.
