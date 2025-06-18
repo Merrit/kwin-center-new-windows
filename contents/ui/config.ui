@@ -1,107 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>KWin::CenterNewWindowsConfig</class>
- <widget class="QWidget" name="KWin::CenterNewWindowsConfig">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>400</width>
-    <height>500</height>
-   </rect>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>400</width>
-    <height>500</height>
-   </size>
-  </property>
-  <property name="sizeIncrement">
-   <size>
-    <width>0</width>
-    <height>0</height>
-   </size>
-  </property>
-  <property name="windowTitle">
-   <string>Center New Windows</string>
-  </property>
-  <property name="autoFillBackground">
-   <bool>false</bool>
-  </property>
-  <layout class="QVBoxLayout" name="verticalLayout_4">
-   <item>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <property name="spacing">
-      <number>6</number>
-     </property>
-     <property name="leftMargin">
-      <number>0</number>
-     </property>
-     <property name="topMargin">
-      <number>0</number>
-     </property>
-     <property name="rightMargin">
-      <number>0</number>
-     </property>
-     <property name="bottomMargin">
-      <number>0</number>
-     </property>
-     <item>
-      <widget class="QGroupBox" name="groupBox_applications">
-       <property name="title">
-        <string>Excluded Applications</string>
-       </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_7">
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout_applications">
-          <property name="spacing">
-           <number>3</number>
-          </property>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout"/>
-          </item>
-          <item>
-           <widget class="QLabel" name="label">
-            <property name="text">
-             <string>Window classes to exclude, one per line. If a window's class is in this list, it's windows will not be centered. Example: org.kde.yakuake</string>
-            </property>
-            <property name="wordWrap">
-             <bool>true</bool>
-            </property>
-            <property name="margin">
-             <number>3</number>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>You can find the class by launching &quot;KWin Debug Console&quot; from KRunner, and for the target window find the &quot;resourceClass&quot; field.</string>
-            </property>
-            <property name="wordWrap">
-             <bool>true</bool>
-            </property>
-            <property name="margin">
-             <number>3</number>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPlainTextEdit" name="kcfg_applications">
-            <property name="placeholderText">
-             <string/>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
-     </item>
-    </layout>
-   </item>
-  </layout>
- </widget>
- <resources/>
- <connections/>
+    <class>KWin::CenterNewWindowsConfig</class>
+    <widget class="QWidget" name="KWin::CenterNewWindowsConfig">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>400</width>
+                <height>500</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>400</width>
+                <height>500</height>
+            </size>
+        </property>
+        <property name="sizeIncrement">
+            <size>
+                <width>0</width>
+                <height>0</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>Center New Windows</string>
+        </property>
+        <property name="autoFillBackground">
+            <bool>false</bool>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                    <property name="spacing">
+                        <number>6</number>
+                    </property>
+                    <property name="leftMargin">
+                        <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                        <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                        <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                        <number>0</number>
+                    </property>
+                    <item>
+                        <widget class="QGroupBox" name="groupBox_applications">
+                            <property name="title">
+                                <string>Excluded Applications</string>
+                            </property>
+                            <layout class="QHBoxLayout" name="horizontalLayout_7">
+                                <item>
+                                    <layout class="QVBoxLayout" name="verticalLayout_applications">
+                                        <property name="spacing">
+                                            <number>3</number>
+                                        </property>
+                                        <item>
+                                            <layout class="QHBoxLayout" name="horizontalLayout" />
+                                        </item>
+                                        <item>
+                                            <widget class="QLabel" name="label">
+                                                <property name="text">
+                                                    <string>Window classes to exclude, one per line. If a window's class is in this list, it's windows will not be centered. Example: org.kde.yakuake</string>
+                                                </property>
+                                                <property name="wordWrap">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <property name="margin">
+                                                    <number>3</number>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QLabel" name="label_2">
+                                                <property name="text">
+                                                    <string>You can find the class by launching &quot;KWin Debug Console&quot; from KRunner, and for the target window find the &quot;resourceClass&quot; field.</string>
+                                                </property>
+                                                <property name="wordWrap">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <property name="margin">
+                                                    <number>3</number>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QPlainTextEdit" name="kcfg_applications">
+                                                <property name="placeholderText">
+                                                    <string />
+                                                </property>
+                                            </widget>
+                                        </item>
+                                    </layout>
+                                </item>
+                            </layout>
+                        </widget>
+                    </item>
+                </layout>
+            </item>
+        </layout>
+    </widget>
+    <resources />
+    <connections />
 </ui>
