@@ -98,6 +98,30 @@
                             </layout>
                         </widget>
                     </item>
+                    <item>
+                        <widget class="QCheckBox" name="kcfg_EnableDebugLogging">
+                            <property name="text">
+                                <string>Enable debug logging</string>
+                            </property>
+                            <property name="checked">
+                                <bool>false</bool>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_notice">
+                            <property name="text">
+                                <string>Please disable and re-enable the script after making changes
+                                    for them to take effect.</string>
+                            </property>
+                            <property name="wordWrap">
+                                <bool>true</bool>
+                            </property>
+                            <property name="margin">
+                                <number>6</number>
+                            </property>
+                        </widget>
+                    </item>
                 </layout>
             </item>
         </layout>
