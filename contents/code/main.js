@@ -13,6 +13,7 @@ const userExcludedApplications = readConfig("applications", "").toLowerCase().sp
 
 const config = {
     excludedApplications: alwaysExcludedApplications.concat(userExcludedApplications),
+    enableDebugLogging: readConfig("EnableDebugLogging", "false"),
 };
 
 /**
@@ -29,6 +30,10 @@ const config = {
  * @returns {void}
  */
 function print(message) {
+    if (config.enableDebugLogging === "false") {
+        return;
+    }
+
     console.info("center-new-windows: " + message);
 }
 

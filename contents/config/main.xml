@@ -5,9 +5,8 @@
                           http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
     <kcfgfile name=""/>
     <group name="">
-        <entry name="applications" type="string">
-            <label>List of applications to be excluded or included</label>
-            <default></default>
+        <entry name="EnableDebugLogging" type="Bool">
+            <default>false</default>
         </entry>
     </group>
 </kcfg>
