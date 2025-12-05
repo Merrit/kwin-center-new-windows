@@ -4,6 +4,7 @@
 const alwaysExcludedApplications = [
     "krunner",
     "org.kde.yakuake",
+    "org.kde.plasmashell"
 ];
 
 /// User specified applications to exclude from being centered.
