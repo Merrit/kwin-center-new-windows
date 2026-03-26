@@ -43,7 +43,7 @@ workspace.windowAdded.connect(window => {
     let className = window.resourceClass.toLowerCase();
     let isNormalWindow = (window.windowType === 0);
 
-    let isExcludedApplication = window.isFullScreen ||
+    let isExcludedApplication = window.fullScreen || !window.moveable ||
         config.excludedApplications.includes(className);
 
     print("~~~~~");    
