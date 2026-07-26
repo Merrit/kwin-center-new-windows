@@ -15,6 +15,8 @@ const userExcludedApplications = readConfig("applications", "").toLowerCase().sp
 const config = {
     excludedApplications: alwaysExcludedApplications.concat(userExcludedApplications),
     enableDebugLogging: readConfig("EnableDebugLogging", "false"),
+    horizontalOffset: readConfig("HorizontalOffset", 0),
+    verticalOffset: readConfig("VerticalOffset", 0),
 };
 
 /**
@@ -71,9 +73,15 @@ workspace.windowAdded.connect(window => {
     // Get the available client area for the window.
     let clientArea = workspace.clientArea(KWin.MaximizeArea, window);
 
-    // Move the window to the center of the client area.
-    let x = clientArea.x + (clientArea.width - geometry.width) / 2;
-    let y = clientArea.y + (clientArea.height - geometry.height) / 2;
+    let x = clientArea.x + (clientArea.width - geometry.width) / 2 +
+        config.horizontalOffset;
+    let y = clientArea.y + (clientArea.height - geometry.height) / 2 +
+        config.verticalOffset;
+
+    let maximumX = clientArea.x + Math.max(0, clientArea.width - geometry.width);
+    let maximumY = clientArea.y + Math.max(0, clientArea.height - geometry.height);
+    x = Math.max(clientArea.x, Math.min(x, maximumX));
+    y = Math.max(clientArea.y, Math.min(y, maximumY));
 
     window.frameGeometry = {
         x: x,

@@ -7,8 +7,11 @@ The `Centered` window placement policy
 include a cascading behaviour. This script restores the previous behaviour of 
 _actually centering_ new windows on the screen.
 
-An options dialog is included to allow the user to exclude applications from 
-being centered.
+An options dialog is included to allow the user to exclude applications from
+being centered and to offset the centered position. `HorizontalOffset` moves
+windows right when positive and left when negative. `VerticalOffset` moves
+windows down when positive and up when negative. Both settings are measured in
+pixels, default to `0`, and are limited to the usable screen area.
 
 ## Download
 
